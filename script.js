@@ -16,8 +16,8 @@ function generatePassword() {
   var lowerAlph= "abcdefghijklmnopqrstuvwxyz".split(",");
   var upperAlph= "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(",");
   var number ="1234567890".split(",");
-  var Symbols = "!@#$%^&*()_+=-}{][|~`><?".split(",");
-  var characterSet= lowerAlph+upperAlph+number+Symbols;
+  var symbols = "!@#$%^&*()_+=-}{][|~`><?".split(",");
+  var characterSet= lowerAlph+upperAlph+number+symbols;
 
 
   //prompt user for password length and convert that input to integer
@@ -41,7 +41,7 @@ function generatePassword() {
       characterSet = upperAlph;
     }
     else if(!wantCap&&wantSymbols&&!wantLower&&!wantNumbers){
-      characterSet = Symbols;
+      characterSet = symbols;
     }
     else if(!wantCap&&!wantSymbols&&wantLower&&!wantNumbers){
       characterSet = lowerAlph;
@@ -50,40 +50,40 @@ function generatePassword() {
       characterSet = number;
     }
     else if(!wantCap&&wantSymbols&&wantLower&&wantNumbers){
-      characterSet = Symbols+ lowerAlph+ number;
+      characterSet = symbols+ lowerAlph+ number;
     }
     else if(wantCap&&!wantSymbols&&wantLower&&wantNumbers){
       characterSet = upperAlph+ lowerAlph+ number;
     }
     else if(wantCap&&wantSymbols&&!wantLower&&wantNumbers){
-      characterSet = Symbols+ upperAlph+ number;
+      characterSet = symbols+ upperAlph+ number;
     }
     else if(wantCap&&wantSymbols&&wantLower&&!wantNumbers){
-      characterSet = Symbols+ upperAlph+ upperAlph;
+      characterSet = symbols+ upperAlph+ upperAlph;
     }
     else if(!wantCap&&!wantSymbols&&wantLower&&wantNumbers){
       characterSet = lowerAlph+ number;
     }
     else if(!wantCap&&wantSymbols&&!wantLower&&wantNumbers){
-      characterSet = Symbols+ number;
+      characterSet = symbols+ number;
     }
     else if(!wantCap&&wantSymbols&&wantLower&&!wantNumbers){
-      characterSet = Symbols+ lowerAlph;
+      characterSet = symbols+ lowerAlph;
     }
     else if(wantCap&&!wantSymbols&&!wantLower&&wantNumbers){
-      characterSet = numbers+upperAlph;
+      characterSet = number+upperAlph;
     }
     else if(wantCap&&!wantSymbols&&wantLower&&!wantNumbers){
       characterSet = lowerAlph+upperAlph;
     }
     else if(wantCap&&wantSymbols&&!wantLower&&!wantNumbers){
-      characterSet = Symbols+upperAlph;
+      characterSet = symbols+upperAlph;
     }
     else if(wantCap&&!wantSymbols&&!wantLower&&!wantNumbers){
       characterSet = upperAlph;
     }
     else if(!wantCap&&wantSymbols&&!wantLower&&!wantNumbers){
-      characterSet = Symbols;
+      characterSet = symbols;
     }
     else if(!wantCap&&!wantSymbols&&wantLower&&!wantNumbers){
       characterSet = lowerAlph;
