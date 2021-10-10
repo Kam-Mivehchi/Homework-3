@@ -15,4 +15,4 @@ Link
 https://kam-mivehchi.github.io/Homework-3/
 
 Screenshot
-![screenshot](C:\Users\Kamyar\Pictures\PasswordGenerator.PNG)
+![image](https://user-images.githubusercontent.com/90432404/136686840-0c9a6bc2-29ac-4917-93ae-bb50cb00a90b.png)
