@@ -1,4 +1,5 @@
-# Homework-3
+# Homework-3 
+Password Generator
 
 
 -created a password generator that gives a user the ability to set specific parameters
@@ -10,5 +11,8 @@
 -joined the array items to return a string if user input is valid.
 -this string is then called by the starter code in the write password function and a password is genrated in the text field
 
-Links
+Link
+https://kam-mivehchi.github.io/Homework-3/
 
+Screenshot
+![screenshot](C:\Users\Kamyar\Pictures\PasswordGenerator.PNG)
